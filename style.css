@@ -15,10 +15,39 @@
     padding: 0;
 }
 
+body{
+    background-color: var(--color-cream);
+    margin: 2rem 1rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-@media screen and (min-width:576px) {
+}
+
+
+@media screen and (max-width:576px) {
+
+    .card-container {
+        background-color: var(--color-neutral-white);
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+
+        border: 1px solid var(--color-neutral-dark-grayish-blue);
+        border-radius: 14px;
+    }
+
+    .card-img{
+        background: url('images/image-product-mobile.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 14px;
+        width: inherit;
+        aspect-ratio: 1/1;
+    }
     
 
-    
+
 
 }
