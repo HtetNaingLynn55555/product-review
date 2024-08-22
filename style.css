@@ -130,8 +130,8 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 75%;
-        height: 80vh;
+        width: 35%;
+        height: 70vh;
         border: 1px solid none;
         margin: 1rem 2rem;
         border-radius: 14px;
@@ -154,8 +154,8 @@ body{
         height: inherit;
         display: flex;
         flex-direction: column;
-        gap: 1rem;
-        justify-content: space-around;
+        letter-spacing: 1px;
+        justify-content: space-between;
         padding: 1rem 1.5rem;
         border-top-right-radius: 14px;
         border-bottom-right-radius: 14px;
@@ -163,13 +163,21 @@ body{
         background-color: var(--color-neutral-white);
     }
 
+    .card-body-title{
+        
+        /* height: auto; */
+    }
+
+    .card-body-paragraph{
+        line-height: 1rem;
+        width: inherit;
+    }
 
     .add-to-card{
         display: flex;
         width: 100%;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
         padding: 1rem 1.5rem;
         border-radius: 14px;
         background-color: var(--color-primary);
