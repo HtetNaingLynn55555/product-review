@@ -30,6 +30,44 @@ body{
     cursor: pointer;
 }
 
+.card-label{
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: var(--color-neutral-dark-grayish-blue);
+    text-transform:uppercase;
+}
+.card-body-title,.discount-price{
+    font-family: var(--font-fraunces);
+    font-weight: 900;
+
+}
+
+.card-body-paragraph , .card-label {
+    font-family: var(--font-montserrat);
+    font-size: 14px;
+    line-height: 1.5rem;
+    color: var(--color-neutral-dark-grayish-blue);
+}
+
+
+.discount-price{
+    font-size: 1.5rem;
+    color: var(--color-primary);
+}
+
+.actual-price{
+   
+    font-size: 0.8rem;
+    text-decoration: line-through;
+    color: var(--color-neutral-dark-grayish-blue);
+    font-weight: 500;
+}
+
+.card-price-tag{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 
 @media screen and  (max-width:576px){
 
@@ -62,44 +100,6 @@ body{
         flex-direction: column;
         width: inherit;
         gap: 1rem;
-    }
-
-    .card-label{
-        letter-spacing: 3px;
-        font-weight: 500;
-        color: var(--color-neutral-dark-grayish-blue);
-        text-transform:uppercase;
-    }
-
-    .card-body-title,.discount-price{
-        font-family: var(--font-fraunces);
-        font-weight: 900;
-
-    }
-
-    .card-body-paragraph , .card-label {
-        font-family: var(--font-montserrat);
-        font-size: 14px;
-        line-height: 1.5rem;
-    }
-
-    .card-price-tag{
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    .discount-price{
-        font-size: 1.5rem;
-        color: var(--color-primary);
-    }
-
-    .actual-price{
-       
-        font-size: 0.8rem;
-        text-decoration: line-through;
-        color: var(--color-neutral-dark-grayish-blue);
-        font-weight: 500;
     }
 
     .add-to-card{
@@ -162,5 +162,27 @@ body{
         align-items: start;
         background-color: var(--color-neutral-white);
     }
+
+
+    .add-to-card{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 1.5rem;
+        border-radius: 14px;
+        background-color: var(--color-primary);
+    }
+
+    .add-to-card-btn{
+        color: var(--color-cream);
+        
+    }
+
+    .add-to-card-icon{
+        padding: 0px 0.5rem;
+    }
+    
     
 }
