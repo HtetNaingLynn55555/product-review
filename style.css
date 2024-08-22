@@ -33,7 +33,7 @@ body{
         height: inherit;
         display: flex;
         flex-direction: column;
-
+        gap: 1rem;
         border: 1px solid var(--color-neutral-dark-grayish-blue);
         border-radius: 14px;
     }
@@ -41,12 +41,16 @@ body{
     .card-img{
         background: url('images/image-product-mobile.jpg');
         background-repeat: no-repeat;
-        background-size: contain;
-        border-radius: 14px;
+        background-size: cover;
+        background-position: center center;
+        border-top-left-radius: 14px;
+        border-top-right-radius: 14px;
         width: inherit;
         aspect-ratio: 1/1;
     }
-    
+    .card-body{
+        padding: 14px;
+    }
 
 
 
