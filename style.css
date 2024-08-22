@@ -17,7 +17,7 @@
 
 body{
     background-color: var(--color-cream);
-    margin: 2rem 1rem;
+    /* padding: 2rem 1rem; */
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -25,14 +25,22 @@ body{
 
 }
 
+.add-to-card:hover{
+    background-color: hsl(159, 39%, 25%);
+    cursor: pointer;
+}
 
-@media screen and (max-width:576px) {
+
+@media screen and  (max-width:576px){
 
     .card-container {
+       
         background-color: var(--color-neutral-white);
-        height: inherit;
+        width: 100%;
+        height: 80vh;
         display: flex;
         flex-direction: column;
+        margin: 1rem 2rem;
         gap: 1rem;
         border: 1px solid var(--color-neutral-dark-grayish-blue);
         border-radius: 14px;
@@ -42,16 +50,117 @@ body{
         background: url('images/image-product-mobile.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center center;
+        background-position: center;
         border-top-left-radius: 14px;
         border-top-right-radius: 14px;
         width: inherit;
-        aspect-ratio: 1/1;
+        height: 40%;
     }
     .card-body{
         padding: 14px;
+        display: flex;
+        flex-direction: column;
+        width: inherit;
+        gap: 1rem;
+    }
+
+    .card-label{
+        letter-spacing: 3px;
+        font-weight: 500;
+        color: var(--color-neutral-dark-grayish-blue);
+        text-transform:uppercase;
+    }
+
+    .card-body-title,.discount-price{
+        font-family: var(--font-fraunces);
+        font-weight: 900;
+
+    }
+
+    .card-body-paragraph , .card-label {
+        font-family: var(--font-montserrat);
+        font-size: 14px;
+        line-height: 1.5rem;
+    }
+
+    .card-price-tag{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .discount-price{
+        font-size: 1.5rem;
+        color: var(--color-primary);
+    }
+
+    .actual-price{
+       
+        font-size: 0.8rem;
+        text-decoration: line-through;
+        color: var(--color-neutral-dark-grayish-blue);
+        font-weight: 500;
+    }
+
+    .add-to-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 1.5rem;
+        border-radius: 14px;
+        background-color: var(--color-primary);
+    }
+
+    .add-to-card-btn{
+        color: var(--color-cream);
+        
+    }
+
+    .add-to-card-icon{
+        padding: 0px 0.5rem;
     }
 
 
+}
 
+@media  screen and (min-width:577px) {
+
+    .card-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75%;
+        height: 80vh;
+        border: 1px solid none;
+        margin: 1rem 2rem;
+        border-radius: 14px;
+    }
+
+    .card-img{
+        background: url('images/image-product-desktop.jpg');
+        border-top-left-radius: 14px;
+        border-bottom-left-radius: 14px;
+        background-position: center center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        height: inherit;
+        width: 50%;
+
+    }
+
+    .card-body{
+        width: 50%;
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: space-around;
+        padding: 1rem 1.5rem;
+        border-top-right-radius: 14px;
+        border-bottom-right-radius: 14px;
+        align-items: start;
+        background-color: var(--color-neutral-white);
+    }
+    
 }
