@@ -78,7 +78,7 @@ body{
         height: 80vh;
         display: flex;
         flex-direction: column;
-        margin: 1rem 2rem;
+        margin: 3rem 2rem;
         gap: 1rem;
         border: 1px solid var(--color-neutral-dark-grayish-blue);
         border-radius: 14px;
@@ -88,11 +88,11 @@ body{
         background: url('images/image-product-mobile.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: center center;
         border-top-left-radius: 14px;
         border-top-right-radius: 14px;
         width: inherit;
-        height: 40%;
+        aspect-ratio: 1/1;
     }
     .card-body{
         padding: 14px;
